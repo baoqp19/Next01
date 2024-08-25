@@ -11,3 +11,8 @@ Request -> Router -> Layout -> Page
 
  -- [slug] là thư mục thêm tên gì cũng dc
  -- [[...slug]] là thu muc nhièu cap haha/hihi/hehe slug[0], slug[1]
+
+ (client) là localhost:3000 thôi không cần thêm /client
+
+ # npm i clsx 
+ -- nếu giá trị nhận vào là false, null, undefined thì không thêm  vào className
