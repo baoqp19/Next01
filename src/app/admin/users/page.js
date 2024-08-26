@@ -1,5 +1,7 @@
 import React from 'react'
-
+export const metadata = {
+  title: "Quản lý người dùng",
+}
 const Users = () => {
   return (
     <div>

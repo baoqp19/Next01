@@ -1,16 +1,16 @@
-"use client";
-import { useRouter } from "next/navigation";   // chú ý import
+
+export const metadata = {
+  title: "Trang chủ - Học lập trình để đi làm",        // lỗi chỉ chạy trong server
+};
+
+import Button from "./components/Button";
 
 export default function Home() {
-  const router = useRouter();
 
-  const handleClick = () => {
-    router.push("/admin");
-  };
   return (
     <main>
       <h1>Hello</h1>
-      <button onClick={handleClick}>Vào quản trị</button>
+      <Button />
     </main>
   );
 }

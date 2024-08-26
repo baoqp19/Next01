@@ -1,3 +1,8 @@
+
+export const metadata = {
+  title : "trang quan tri"
+}
+
 const AdminLayout = ({ children }) => {
   return (
     <div>
