@@ -1,3 +1,18 @@
+export const generateMetadata = ({ params }) => {
+  let title = "Danh sach tin tuc";
+  if (!params.slug) {
+    return { title };
+  }
+  if (params.slug[1]) {
+    title = "Chi tiet tin tuc: " + params.slug[1];  
+  } else {
+    title = "Chuyen muc tin tuc " + params.slug[0];
+  }
+  return {
+    title
+  };
+};
+
 import Category from "@/components/Posts/Category";
 import PostDetail from "@/components/Posts/PostDetail";
 import PostList from "@/components/Posts/Posts";
